@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "netease-album-wallpaper"
+version = "0.1.0"
+description = "Generate a color-sorted album-cover wallpaper from a public NetEase Cloud Music playlist."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "flowerzm"}]
+keywords = ["netease", "album-art", "wallpaper", "collage", "color-sorting"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Multimedia :: Graphics",
+]
+dependencies = [
+  "numpy>=1.24",
+  "Pillow>=10.0",
+]
+
+[project.scripts]
+netease-album-wallpaper = "netease_album_wallpaper.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/flowerzm/netease-album-wallpaper"
+Repository = "https://github.com/flowerzm/netease-album-wallpaper"
+Issues = "https://github.com/flowerzm/netease-album-wallpaper/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
