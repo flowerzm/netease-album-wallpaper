@@ -2,6 +2,8 @@
 
 粘贴一个网易云音乐**公开歌单**链接或完整分享文案，自动下载去重后的专辑封面，并生成按颜色自然过渡的画廊式壁纸。
 
+<img width="1920" height="1200" alt="专辑封面墙生成效果预览" src="https://github.com/user-attachments/assets/e5a2ed7f-bc12-4136-9c98-81134d4771e9" />
+
 ```text
 分享歌单: 我喜欢的音乐 https://163cn.tv/xxxxxx (@网易云音乐)
                               ↓
