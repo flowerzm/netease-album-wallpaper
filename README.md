@@ -92,7 +92,17 @@ netease-album-wallpaper --help
 5. 先按色相与明度生成初始二维布局，再用局部交换降低相邻格子的 Lab 色差。
 6. 按自动计算的网格绘制圆角封面、细间距、阴影和深色背景。
 
-色彩排列思路受 [spy-collage](https://github.com/stephanlensky/spy-collage) 启发；本项目针对本地封面、网易云歌单和单命令工作流重新实现。
+## 致谢与参考
+
+感谢以下开源作者和项目提供的实现思路：
+
+| 作者（GitHub 主页） | 项目 | 本项目参考的内容 |
+| --- | --- | --- |
+| [@SoujiOkita98](https://github.com/SoujiOkita98) | [playlist-roast-skill](https://github.com/SoujiOkita98/playlist-roast-skill) | 网易云公开歌单信息提取与歌曲详情请求思路 |
+| [@Linsxyx](https://github.com/Linsxyx) | [KugouMusic.NET](https://github.com/Linsxyx/KugouMusic.NET) | 网易云分享短链重定向及歌单链接解析思路 |
+| [@stephanlensky](https://github.com/stephanlensky) | [spy-collage](https://github.com/stephanlensky/spy-collage) | 按色彩组织图片并生成封面拼贴墙的思路 |
+
+本项目针对网易云歌单、专辑去重、封面下载和单命令壁纸生成工作流进行了独立的 Python 实现；仓库中未直接包含上述项目的源文件。
 
 ## 限制与说明
 
@@ -111,4 +121,3 @@ python3 -m unittest discover -s tests -v
 ```
 
 欢迎提交 Issue 和 Pull Request。
-
